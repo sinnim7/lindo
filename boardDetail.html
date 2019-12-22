@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Board Detail</title>
+    <link rel="stylesheet" href="boardDetailStyle.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="l_wrapper l_header">
+        <div class="header-inside clearfix">
+          <a href="" class="header-logo">
+            LINDO
+          </a>
+          <ul class="header-menu">
+            <!-- <li><a href="">SHOP</a></li>
+              <li><a href="">BLOG</a></li> -->
+            <li>
+              <div class="search">
+                <input class="search-input" type="text" placeholder="검색" />
+              </div>
+            </li>
+            <li><a href="boardWrite.html">글쓰기</a></li>
+            <li><a href="signin.html">시작하기</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="l_wrapper l_detail">
+        <ul class="content-view">
+          <li class="content-view-item">
+            <div class="content-cover">
+              <img
+                class="cover-img"
+                src="./images/SouthAmerica/20181025_105524.jpg"
+              />
+              <!-- <video
+                class="cover-video"
+                src="./images/The_Power_of_Teamwork_-_Funny_Animation.mp4"
+              ></video> -->
+            </div>
+            <div class="content-text">
+              <span class="text-user">sinnim</span>
+              <span class="text-date">2019.12.25</span>
+              <h1 class="text-title">
+                마추픽추
+              </h1>
+              <p class="text-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat
+              </p>
+            </div>
+            <div class="feed">
+              <div class="feed-user-profile">
+                <a href="#">
+                  <img src="images/sinnim.jpg" alt="sinnim" />
+                </a>
+                <div>
+                  <h1>
+                    <a href="#">
+                      sinnim
+                    </a>
+                  </h1>
+                  <span aria-label="Posted 30 minutes ago">
+                    30 min
+                  </span>
+                </div>
+              </div>
+              <div class="feed-content">
+                <p>
+                  The most beautiful experience we can have is the mysterious.
+                  It is the fundamental emotion that stands at the cradle of
+                  true art and true science. — Albert Einstein
+                </p>
+              </div>
+              <div class="feed-footer">
+                <button type="button">
+                  0 Comments
+                </button>
+              </div>
+              <form action="" method="POST" class="feed-comment">
+                <textarea placeholder="Write a comment"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="detail">
+      <div class="l_wrapper l_detail">
+        <ul class="content-view">
+          <li class="content-view-item">
+            <div class="content-cover">
+              <!-- <img
+                class="cover-img"
+                src="./images/SouthAmerica/20181025_105524.jpg"
+              /> -->
+              <video
+                class="cover-video"
+                src="./videos/20181122_162401.mp4"
+              ></video>
+            </div>
+            <div class="content-text">
+              <span class="text-user">sinnim</span>
+              <span class="text-date">2019.12.25</span>
+              <h1 class="text-title">
+                마추픽추
+              </h1>
+              <p class="text-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                quis, sem. Nulla consequat
+              </p>
+            </div>
+            <div class="feed">
+              <div class="feed-user-profile">
+                <a href="#">
+                  <img src="images/sinnim.jpg" alt="sinnim" />
+                </a>
+                <div>
+                  <h1>
+                    <a href="#">
+                      sinnim
+                    </a>
+                  </h1>
+                  <span aria-label="Posted 30 minutes ago">
+                    30 min
+                  </span>
+                </div>
+              </div>
+              <div class="feed-content">
+                <p>
+                  The most beautiful experience we can have is the mysterious.
+                  It is the fundamental emotion that stands at the cradle of
+                  true art and true science. — Albert Einstein
+                </p>
+              </div>
+              <div class="feed-footer">
+                <button type="button">
+                  0 Comments
+                </button>
+              </div>
+              <form action="" method="POST" class="feed-comment">
+                <textarea placeholder="Write a comment"></textarea>
+                <button type="submit">Submit</button>
+              </form>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      var commentButton = document.querySelector(
+        ".feed-footer button:last-child"
+      );
+      var feedComment = document.querySelector(".feed-comment");
+      commentButton.addEventListener("click", function() {
+        if (this.active) {
+          feedComment.classList.remove("active");
+        } else {
+          feedComment.classList.add("active");
+        }
+        this.active = !this.active;
+      });
+      commentButton.active = false;
+    </script>
+  </body>
+</html>

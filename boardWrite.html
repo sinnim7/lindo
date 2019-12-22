@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BoardWrite</title>
+    <link rel="stylesheet" href="boardWriteStyle.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="l_wrapper l_header">
+        <div class="header-inside clearfix">
+          <a href="index.html" class="header-logo">
+            LINDO
+          </a>
+          <ul class="header-menu">
+            <li><a href="index.html">취소</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="write">
+      <div class="l_wrapper clearfix">
+        <form
+          class="write-content"
+          action=""
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input
+            class="write-content-title"
+            type="text"
+            placeholder="제목을 입력하세요"
+            name="title"
+            required="true"
+          />
+          <div class="write-content-fileUpload">
+            <label for="file">File</label>
+            <input type="file" id="file" name="videoFile" />
+          </div>
+          <textarea
+            class="write-content-text"
+            type="text"
+            placeholder="글을 입력하세요"
+            name="description"
+            required="true"
+          ></textarea>
+          <input class="write-content-submit" type="submit" value="저장" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
