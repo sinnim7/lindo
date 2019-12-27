@@ -1,0 +1,81 @@
+doctype html
+html(lnag="ko")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Board Detail
+        link(rel="" href="")
+
+    body
+        .header
+            .l_wrapper.l_header
+                .header-inside.clearfix
+                    a.header-logo LINDO
+                    ul.header-menu
+                        li
+                            .search
+                                input.search-input(type="text", placeholder="검색")
+                        li
+                            a(href="boardWrite.html") 글쓰기
+                        li
+                            a(href="boardWrite.html") 시작하기
+        
+        .detail
+            .l_wrapper.l_detail
+                ul.content-view
+                    li.content-view-item
+                        .content-cover
+                            img.cover-img(src="/images/SouthAmerica/20181025_105524.jpg")
+                    .content-text
+                        span.text-user  sinnim
+                        span.text-date  2019.12.25
+                        h1.text-title   마추픽추
+                        p.text-text Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                    .feed
+                        .feed-user-profile
+                            a(href="#")
+                                img(src="images/sinnim.jpg")
+                            div
+                                h1
+                                    a(href="#") sinnim
+                                span(aria-label="Posted 30 minutes ago") 30 min
+                        .feed-content
+                            p The most beautiful experience we can have is the mysterious.
+                        .feed-footer
+                            button(type="button")  0 Comments
+                        form.feed-comment(action="", method="POST")
+                            textarea(placeholder="Write a comment")
+                            button(type="submit") Submit
+
+
+        <script>
+      var commentButton = document.querySelector(
+        ".feed-footer button:last-child"
+      );
+      var feedComment = document.querySelector(".feed-comment");
+      commentButton.addEventListener("click", function() {
+        if (this.active) {
+          feedComment.classList.remove("active");
+        } else {
+          feedComment.classList.add("active");
+        }
+        this.active = !this.active;
+      });
+      commentButton.active = false;
+    </script>
+
+
+
+
+                        
+                            
+
+
+                            
+
+
+
+                        
+
+
+
